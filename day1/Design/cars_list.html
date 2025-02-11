@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" style="background-color: rgb(13, 43, 43);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Parking Management system</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cars_list.html">Cars list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="cars_create.html">Add cars</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h3>Cars list</h3>
+      <div class="container">
+        <table class="table">
+          <thead class="table-success">
+              <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Number</th>
+                  <th scope="col">Model</th>
+                  <th scope="col">Class</th>
+                  <th scpoe="col">  </th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>KA09cba4321</td>
+              <td>Zen</td>
+              <td>smaller</td>
+              <td scope="col">
+                <a class="btn btn-secondary" href="cars_view.html?id=1" >view</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>KA09abc1234</td>
+              <td>beatle</td>
+              <td>hatchback</td>
+              <td scope="col">
+                <a class="btn btn-secondary" href="cars_view.html?id=2" >view</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>KA09gft7654</td>
+              <td>Benz</td>
+              <td>GLB</td>
+              <td scope="col">
+                <a class="btn btn-secondary" href="cars_view.html?id=3" >view</a>
+              </td>
+            </tr>   
+            <tr>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Enter the serial number"></th>
+                  <td><input type="text" class="form-control" placeholder="Enter number"></td>
+                  <td><input type="text" class="form-control" placeholder="Enter model"></td>
+                  <td><input type="text" class="form-control" placeholder="Enter class"></td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
